@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<html>
+<head>
+<script>
+	alert("Найдите плотность (p), массу (m), объём (V), указав два известных значения");
+	var m = prompt("Укажите m - массу в кг: ");
+	var V = prompt("Укажите V - объём в куб. м.: ");
+	var p = prompt("Укажите p - плотность в кг/куб. м.: ");
+	if (m == "" && (p && V) != ""){
+		p = parseFloat(p);
+		V = parseFloat(V);
+		m = p * V;
+		alert(m + " - масса объёкта.");
+	}else
+	if (V == "" && (m && p) != "") {
+		m = parseFloat(m);
+		p = parseFloat(p);
+		V = m / p;
+		alert(V + " - объём объёкта.");
+	}else
+	if (p == "" && (m && V) != "") {
+		m = parseFloat(m);
+		V = parseFloat(V);
+		p = m / V;
+		alert(p + "кг/куб. м. - плотность объёкта.");
+	}else
+	if (((m && V) || (m && p) || (V && p)) == "") {
+		alert("У вас более одного неизвестного значения!");
+	}else 
+	if ((m && V && p) != "") {
+		alert("У вас нет неизвестных значений!");
+	}
+	else {
+		alert("Error!");
+	}
+</script>
+</head>
+<html>

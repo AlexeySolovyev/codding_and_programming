@@ -1,0 +1,33 @@
+<meta charset="utf-8">
+<script>
+    alert('Давай сыграем в игру "Угадай число"!');
+    alert("Правила просты: я загадываю число от 0 до 100, а ты угадываешь. Если ошибёшься - подскажу.");
+    alert('Для выхода ты можешь ввести "выход".')
+    
+    var answer = parseInt(Math.random() * 100);
+    var i = parseInt(0);
+    
+    do {
+    var uanswer = prompt("Введи число:");
+    if(uanswer == 'выход'){
+        break;
+    }
+    uanswer = parseInt(uanswer);
+
+    if(uanswer < answer){
+        alert('Твой ответ меньше моего числа.');
+        i++;
+    }
+    else if(uanswer > answer){
+        alert('Твой ответ больше моего числа.');
+        i++;
+    } 
+    else if(uanswer == answer){
+        alert('Правильный ответ! Молодец!');
+        break;
+    }
+    else {
+        alert('Необходимо ввести число!');
+    }        
+    }while(true)
+</script>

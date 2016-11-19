@@ -1,0 +1,11 @@
+<meta charset="utf-8">
+<script>
+var money = parseFloat(prompt("Сумма вклада, руб.:"))//parseFloat, так как только этот числовой тип данных считывает с числа с десятыми
+var persent = parseFloat(prompt("Процентная ставка, %:"))
+var years = parseFloat(prompt("Срок вклада, лет:"))  //Даю возможность пользователю указать срок, а не только расчёт суммы вклада на 5 лет.
+
+for (var i = 0.5; i <= years; i = i + 0.5) {
+	money = money + (0.5 * money) * persent / 100;
+	alert("Прошло лет: " + i + ", сумма на счету: " + Math.floor(money)) //Здесь Math.floor возвращает ближайшее значение целого, чтобы не было числа в периоде.
+}
+</script>

@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script>
+b = 7;
+alert("Давай поиграем в игру Угадай число!");
+alert("Я загадал число от 1 до 10. У тебя есть три попытки угадать его.");
+var a = parseInt(prompt("1-ая попытка:"));
+if (a == b) {
+	alert("Ты выиграл!");
+	Window.close ();
+	Self.close ();
+}
+else{
+	alert("Осталось 2 попытки!");
+}
+var c = parseInt(prompt("2-ая попытка:"));
+if (c == b) {
+	alert("Ты выиграл!");
+	Window.close ();
+	Self.close ();
+}
+else {
+	alert("Осталась последняя попытка!");
+}
+var d = parseInt(prompt("3-яя попытка:"));
+if (d == b) {
+	alert("Ты выиграл!");
+	Window.close ();
+	Self.close ();
+} 
+else {
+	alert("Ты проиграл!");
+	Window.close ();
+	Self.close ();
+}
+</script>
