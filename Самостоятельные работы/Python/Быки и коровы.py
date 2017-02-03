@@ -25,8 +25,7 @@ while want_quit != "Y":
     while try_count != 0 and number != "q" and bulls != 4:
 
         number = input("Ваш ответ (для выхода - q): ")
-        if number == "q":
-            break
+        if number == "q": break
 
         bulls, cows = 0, 0
 
