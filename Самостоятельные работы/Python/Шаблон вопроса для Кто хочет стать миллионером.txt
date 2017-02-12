@@ -1,0 +1,34 @@
+# Вопрос №
+print("\nВопрос №. Стоимость:  рублей")
+
+if quest_ == :
+    a = ""
+    b = ""
+    c = ""
+    d = ""
+    answer = ["", ""]
+elif quest_ == :
+    a = ""
+    b = ""
+    c = ""
+    d = ""
+    answer = ["", ""]
+elif quest_ == :
+    a = ""
+    b = ""
+    c = ""
+    d = ""
+    answer = ["", ""]
+
+print("\n" + quest_)
+print("A - " + a)
+print("B - " + b)
+print("C - " + c)
+print("D - " + d)
+user_answ = input("\nВаш ответ: ")
+user_answ = user_answ.upper()
+if user_answ == answer[0] or user_answ == answer[1]:
+    print("\nПоздравляем! Ваш выигрыш:  руб. До победы осталось  вопросов!")
+else:
+    print("\nК сожалению, вы проиграли! Ваш выигрыш:  руб.")
+    sys.exit(0)
