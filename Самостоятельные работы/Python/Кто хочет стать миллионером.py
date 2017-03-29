@@ -6,7 +6,7 @@ print('ПКШоу "Кто хочет стать миллионером?"')
 print("Правила игры:")
 print("Вашей задачей будет пройти 15 вопросов, состоящих из 4 ответов. Постепенно вы будете зарабатывать виртуальный приз.")
 print("Также вы можете воспользоваться подзказками, вводя их в поле ответа: ")
-print("Q - вы уходите из игры, сохраняя ваш приз; \n50:50 - подсказка 50:50 убирает два заведомо неверных ответа; \n2 - двойной ответ, дающий возможность ответить на вопрос дважды; \nСмена - смнеа текущего вопроса на другой, при этом вы не продвигаетесь дальше;")
+print("Q - вы уходите из игры, сохраняя ваш приз; \n50 - подсказка 50:50 убирает два заведомо неверных ответа; \n2 - двойной ответ, дающий возможность ответить на вопрос дважды; \nСмена - смена текущего вопроса на другой, при этом вы не продвигаетесь дальше;")
 print("Вы можете пользоваться всеми подсказками, но только один раз.")
 input("Начнём?\n\n")
 
@@ -155,11 +155,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -248,11 +248,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -341,11 +341,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -434,11 +434,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -527,11 +527,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -620,11 +620,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -713,11 +713,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -806,11 +806,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -899,11 +899,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -992,11 +992,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -1085,11 +1085,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -1178,7 +1178,7 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
@@ -1271,11 +1271,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -1364,11 +1364,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
@@ -1457,11 +1457,11 @@ while quit != "НЕТ":
                 hintChange = False
             elif user_answ == "СМЕНА" and not hintChange:
                 print("К сожалению, подсказка Смена вопроса была уже использована!")
-            elif user_answ == "50:50" and hint50:
+            elif user_answ == "50" and hint50:
                 print("Два заведомо неверных ответа были убраны!")
                 hint50istrue = True
                 hint50 = False
-            elif user_answ == "50:50" and not hint50:
+            elif user_answ == "50" and not hint50:
                 print("К сожалению, подсказка 50:50 была уже использована!")
             elif user_answ == "2" and hint2:
                 print("Вам дано Право на ошибку!")
