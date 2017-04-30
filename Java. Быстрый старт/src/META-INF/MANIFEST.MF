@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: pavetranquil.lesson_8.the_game_of_drop_3_part.GameWindow
-
