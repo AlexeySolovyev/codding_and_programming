@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+from House import House
+
+class Person:
+    
+    __name = "n/a"
+    __age = 0
+    __address = "n/a"
+    
+    def setName(self, n):
+        self.__name = n
+        
+    def setAge(self, a):
+        self.__age = a
+    
+    def setAddress(self, adrs):
+        self.__address = adrs
+    
+    def name(self):
+        return self.__name
+    
+    def age(self):
+        return self.__age
+    
+    def address(self):
+        return self.__address
+        
+    def descriptionOfPerson(self):
+        print(".................")
+        print("| ������! ���� �����", self.__name + "!")
+        print("| ���", self.__age, "���!")
+        print('| ��� ����� "' + self.__address + '"!')

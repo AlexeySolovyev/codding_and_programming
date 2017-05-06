@@ -1,0 +1,31 @@
+from House import House
+
+class Person:
+    
+    __name = "n/a"
+    __age = 0
+    __address = "n/a"
+    
+    def setName(self, n):
+        self.__name = n
+        
+    def setAge(self, a):
+        self.__age = a
+    
+    def setAddress(self, adrs):
+        self.__address = adrs
+    
+    def name(self):
+        pass
+    
+    def age(self):
+        pass
+    
+    def address(self):
+        pass
+        
+    def descriptionOfPerson(self):
+        print(".................")
+        print("| Hi! My name is", self.__name + "!")
+        print("| I'm", self.__age, "years old!")
+        print("| I'm live on", self.__address, "!")

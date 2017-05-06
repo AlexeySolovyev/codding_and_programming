@@ -1,0 +1,56 @@
+from Person import Person
+from House import House
+from Programmer import Programmer
+
+print("Создаём мужчину и женщину...")
+man = Person("Вася", 14)
+woman = Person("Алиса", 15)
+print("\nСоздаём программиста...")
+programmer_man = Programmer("Костя", 27)
+
+print("\nСоздаём дома...")
+house_of_men = House("Москва, дом 2")
+techical_house = House("Технический проспект, дом 5")
+
+
+
+print("\nЗапрашиваем описание мужчины...")
+man.descriptionOfPerson()
+print("\nЗапрашиваем описание женщины...")
+woman.descriptionOfPerson()
+print("\nЗапрашиваем описание программиста...")
+programmer_man.descriptionOfPerson()
+# print("\nЗапрашиваем описание дома...")
+# house_of_men.descriptionOfHouse()
+
+
+
+# print("\nЗадаём дому адрес...")
+# house_of_men.setAddress("Москва, дом 2")
+
+# print("\nЗапрашиваем описание дома...")
+# house_of_men.descriptionOfHouse()
+
+
+
+
+# print("\nЗадаём мужчине имя, возраст и дом...")
+# man.setName("Вася")
+# man.setAge("14")
+house_of_men.settlePerson(man)
+
+# print("\nИ запрашиваем его описание...")
+# man.descriptionOfPerson()
+
+
+# print("\nЗадаём женщине имя, возраст и дом...")
+# woman.setName("Алиса")
+# woman.setAge("15")
+house_of_men.settlePerson(woman)
+
+# print("\nИ запрашиваем её описание...")
+# woman.descriptionOfPerson()
+
+
+print("\nИ, наконец, запрашиваем описание дома...")
+house_of_men.descriptionOfHouse()

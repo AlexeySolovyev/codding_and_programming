@@ -1,0 +1,18 @@
+class House:
+    __address = "n/a"
+    __listOfResidents = []
+    
+    def setAddress(self):
+        pass
+        
+    def address(self):
+        pass
+    
+    def settlePerson(self):
+        pass
+    
+    def evictPerson(self):
+        pass
+    
+    def descriptionOfHouse(self):
+        pass

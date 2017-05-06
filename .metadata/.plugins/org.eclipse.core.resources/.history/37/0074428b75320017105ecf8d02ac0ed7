@@ -1,0 +1,26 @@
+from Person import Person
+from House import House
+
+man = Person()
+woman = Person()
+house_of_men = House()
+house_of_women = House()
+
+print("Запрашиваем описание мужчины...")
+man.descriptionOfPerson()
+woman.descriptionOfPerson()
+house_of_men.descriptionOfHouse()
+house_of_women.descriptionOfHouse()
+
+
+
+man.setName("Вася")
+man.setAge("14")
+
+man.descriptionOfPerson()
+
+
+woman.setName("Алиса")
+woman.setAge("15")
+
+woman.descriptionOfPerson()

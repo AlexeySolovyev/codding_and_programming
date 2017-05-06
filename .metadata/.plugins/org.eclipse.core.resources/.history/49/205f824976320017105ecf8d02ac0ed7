@@ -1,0 +1,39 @@
+from Person import Person
+from House import House
+
+print("Создаём мужчину и женщину...")
+man = Person()
+woman = Person()
+print("\nСоздаём дома для мужчин и женщин...")
+house_of_men = House()
+house_of_women = House()
+
+
+print("\nЗапрашиваем описание мужчины...")
+man.descriptionOfPerson()
+print("\nЗапрашиваем описание женщины...")
+woman.descriptionOfPerson()
+print("\nЗапрашиваем описание дома для мужчин...")
+house_of_men.descriptionOfHouse()
+print("\nЗапрашиваем описание дома для женщин...")
+house_of_women.descriptionOfHouse()
+
+
+print("\nЗадаём домам адрес...")
+house_of_men.setAddress("Мужской проспект, дом 2")
+house_of_women.setAddress("Женская улица, дом 20")
+
+print("\nЗапрашиваем описания домов...")
+house_of_men.descriptionOfHouse()
+house_of_women.descriptionOfHouse()
+
+man.setName("Вася")
+man.setAge("14")
+
+man.descriptionOfPerson()
+
+
+woman.setName("Алиса")
+woman.setAge("15")
+
+woman.descriptionOfPerson()

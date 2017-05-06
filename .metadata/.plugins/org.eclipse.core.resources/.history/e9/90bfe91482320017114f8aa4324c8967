@@ -1,0 +1,14 @@
+from Person import Person
+
+class SysAdmin(Person):
+    __SAExp = 0
+    
+    def setProgExp(self, px):
+        self.__progExp = px
+        
+    def ProgExp(self):
+        return self.__progExp
+    
+    def descriptionOfPerson(self):
+        super(Programmer, self).descriptionOfPerson()
+        print("| Я программист и мой опыт работы -", self.__progExp, "лет!")
