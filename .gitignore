@@ -1,6 +1,6 @@
-.git
-.idea
-.metadata
-.settings
+.git\
+.idea\
+.metadata\
+.settings\
 .project
 .pydevproject
