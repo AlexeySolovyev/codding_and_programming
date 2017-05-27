@@ -1,6 +1,6 @@
 logANDpass = open("C:/logANDpass.txt", "r").read()
 
-class MyVkData:
+class MyVKData:
 	userID = "165504240"
 	DurovUserID = "1"
 	apiUrl = "https://api.vk.com/method/"

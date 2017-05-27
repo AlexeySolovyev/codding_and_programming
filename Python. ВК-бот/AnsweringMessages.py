@@ -1,6 +1,6 @@
 import vk
 from VKBot import MyVKData
-import time
+from time import *
 
 def sendUser(ms):
 	vkapi.messages.send(user_id = messages[n]["uid"], message = ms)
@@ -11,7 +11,7 @@ session = vk.AuthSession(app_id = MyVKData.appID, user_login = MyVKData.login, u
 vkapi = vk.API(session)
 
 while True:
-	time.sleep(2)
+	sleep(2)
 	messages = vkapi.messages.get(time_offset = 1)
 	for n in range(1, len(messages)):
 		textMessage = messages[n]["body"].lower()
