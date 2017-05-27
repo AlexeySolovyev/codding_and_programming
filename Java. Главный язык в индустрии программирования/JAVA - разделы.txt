@@ -1,0 +1,4 @@
+Java ME - Micro Edition - создание маленьких приложений для портативных устройств.
+Java SE - Standart Edition - создание приложений на GUI и маленьких приложений на PC. 
+
+Java EE - Enterprice Edition - создание крупных проектов и NetWorking-приложений.
