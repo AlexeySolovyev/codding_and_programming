@@ -3,7 +3,11 @@
 .metadata/
 .settings/
 __pycache__/
+RemoteSystemsTempFiles/
+.recommenders/
+
 
 .project
 .pydevproject
 .gitignore
+.classpath
