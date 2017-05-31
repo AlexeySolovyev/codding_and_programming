@@ -167,9 +167,7 @@ class Graphic extends JFrame {
 					text.setText(Double.toString(n1 + n2));
 					addition = false;
 				}
-				else {
-
-				}
+				else {}
 				
 			}
 			if (e.getSource() == b19) {
