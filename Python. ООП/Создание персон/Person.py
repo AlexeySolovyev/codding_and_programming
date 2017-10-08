@@ -10,6 +10,6 @@ class Person:
         self.__age = a
         
     def descriptionOfPerson(self):
-        print(".................")
+        print("-----------------")
         print("| Hi! My name is", self.__name + "!")
         print("| I'm", self.__age, "years old!")
