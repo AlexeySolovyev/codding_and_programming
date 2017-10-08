@@ -4,5 +4,5 @@ setup(
     name = "Name_project",
     version = "version",
     description = "About project",
-    executables = [Executable("Name_of_python_file.py")]
+    executables = [Executable("main.py")]
 )
