@@ -48,3 +48,25 @@ def said(phraze):
         if s == '.':
             bore = True
     print('\n')
+
+
+def quest(question, ans1='', ans2='', ans3=''):
+    result = -1
+    print(question + ' (в ответ вводится цифра)')
+    print('1. ' + ans1)
+    print('2. ' + ans2)
+    maxa = 2
+
+    if ans3 != '':
+        print('3. ' + ans3)
+        maxa = 3
+
+    while result == -1:
+        try:
+            result = int(input('Ваш ответ: '))
+            if result > maxa or result <= 0:
+                raise Exception
+        except Exception:
+            result = -1
+            print('Вводите ЧИСЛА от 1 до ' + str(maxa) + '!')
+    return result
