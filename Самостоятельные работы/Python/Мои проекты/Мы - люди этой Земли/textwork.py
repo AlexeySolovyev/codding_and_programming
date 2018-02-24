@@ -16,7 +16,6 @@ def cntt(text, centers='center'):
             print('{:>80}'.format(s), end='')
         elif centers == "center":
             print('{:^80}'.format(s), end='')
-    return
 
 
 def cnt(text, centers='center'):
@@ -26,7 +25,6 @@ def cnt(text, centers='center'):
         print('{:>80}'.format(text), end='')
     elif centers == "center":
         print('{:^80}'.format(text), end='')
-    return
 
 
 def horiz():
@@ -39,16 +37,14 @@ def cls():
 
 def said(phraze):
     bore = False
-    time.sleep(1.5)
+    time.sleep(0.5)
     for s in phraze:
         print(s, end='')
         sys.stdout.flush()
         if (bore and s == '.') or s == '!':
-            time.sleep(0.5)
+            time.sleep(0.25)
         else:
-            time.sleep(0.1)
-
+            time.sleep(0.04)
         if s == '.':
             bore = True
-
     print('\n')
