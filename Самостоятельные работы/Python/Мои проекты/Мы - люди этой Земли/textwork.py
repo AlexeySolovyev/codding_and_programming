@@ -40,6 +40,7 @@ def cls():
 def said(phraze):
     bore = False
     situation = False
+    sys_space = False
     time.sleep(0.5)
     for s in phraze:
         print(s, end='')
@@ -47,6 +48,8 @@ def said(phraze):
         if (bore and s == '.') or s == '!':
             time.sleep(0.25)
         elif situation:
+            time.sleep(0)
+        elif sys_space and s == ' ':
             time.sleep(0)
         else:
             time.sleep(0.045)
@@ -59,6 +62,12 @@ def said(phraze):
             situation = True
         elif s == ']':
             situation = False
+
+        if s == ' ':
+            sys_space = True
+        else:
+            sys_space = False
+
     print('\n')
 
 
