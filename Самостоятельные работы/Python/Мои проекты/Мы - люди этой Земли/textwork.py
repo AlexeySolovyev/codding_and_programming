@@ -52,7 +52,7 @@ def said(phraze):
         elif sys_space and s == ' ':
             time.sleep(0)
         else:
-            time.sleep(0.045)
+            time.sleep(0.049)
         if s == '.':
             bore = True
         else:
