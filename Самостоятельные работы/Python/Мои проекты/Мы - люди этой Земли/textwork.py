@@ -52,9 +52,12 @@ def said(phraze):
             time.sleep(0.045)
         if s == '.':
             bore = True
+        else:
+            bore = False
+
         if s == '[':
             situation = True
-        if s == ']':
+        elif s == ']':
             situation = False
     print('\n')
 
