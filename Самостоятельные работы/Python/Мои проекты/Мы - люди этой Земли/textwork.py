@@ -25,6 +25,8 @@ def cnt(text, centers='center'):
         print('{:>80}'.format(text), end='')
     elif centers == "center":
         print('{:^80}'.format(text), end='')
+    sys.stdout.flush()
+    time.sleep(1)
 
 
 def horiz():
@@ -44,7 +46,7 @@ def said(phraze):
         if (bore and s == '.') or s == '!':
             time.sleep(0.25)
         else:
-            time.sleep(0.04)
+            time.sleep(0.045)
         if s == '.':
             bore = True
     print('\n')
