@@ -128,6 +128,19 @@ def yon(winRange):  # yes or no
     randint = random.randint(0, 100)
     if 0 <= randint <= winRange:
         return True
+
+
+def restart(head):
+    horiz()
+    cntt('ИГРА ОКОНЧЕНА!', 'center')
+    horiz()
+
+    repeat = input('Хотите продолжить игру с последней главы? ')
+    if repeat in ['да', 'Да', 'Д', 'д', 'yes', 'Yes', 'Y', 'y']:
+        return head
+    else:
+        return False
+
 def bagAndPlans(bag, plans):
     print('Вот, что храниться в вашем рюкзаке:')
     for t in bag:
