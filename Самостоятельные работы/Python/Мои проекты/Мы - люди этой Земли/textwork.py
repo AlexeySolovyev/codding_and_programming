@@ -77,20 +77,39 @@ def said(phraze):
     print('\n')
 
 
-def quest(question, ans1='', ans2='', ans3=''):
+def quest(question, bag, plans, ans1='', ans2='', ans3='', ans4=''):
     result = -1
     print(question + ' (в ответ вводится цифра)')
-    print('1. ' + ans1)
-    print('2. ' + ans2)
-    maxa = 2
+    print('[1] - ' + ans1)
+    maxa = 1
 
-    if ans3 != '':
-        print('3. ' + ans3)
-        maxa = 3
+    if ans2 != '':
+        print('[2] - ' + ans2)
+        maxa = 2
+        if ans3 != '':
+            print('[3] - ' + ans3)
+            maxa = 3
+            if ans4 != '':
+                print('[4] - ' + ans4)
+                maxa = 4
 
     while result == -1:
         try:
-            result = int(input('Ваш ответ: '))
+            result = input('Ваш ответ: ')
+            if result not in ['B', 'b', 'P', 'p']:
+                result = int(result)
+            else:
+                if result in ['B', 'b']:
+                    print('Вот, что храниться в вашем рюкзаке:')
+                    for t in bag:
+                        print(t)
+                    print('\n')
+                if result in ['P', 'p']:
+                    print('Ваши текущие цели:')
+                    for p in plans:
+                        print(p)
+                    print('\n')
+                result = -1
             if result > maxa or result <= 0:
                 raise Exception
         except Exception:
