@@ -122,3 +122,13 @@ def quest(question, bag, plans, ans1='', ans2='', ans3='', ans4=''):
             result = -1
             print('Вводите ЧИСЛА от 1 до ' + str(maxa) + '!')
     return result
+def bagAndPlans(bag, plans):
+    print('Вот, что храниться в вашем рюкзаке:')
+    for t in bag:
+        print(t)
+    print('\n')
+    print('Ваши текущие цели:')
+    for p in plans:
+        print(p)
+    print('\n')
+    time.sleep(5)
