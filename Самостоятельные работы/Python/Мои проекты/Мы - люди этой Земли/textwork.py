@@ -1,9 +1,13 @@
 ﻿import re
 import time
 import sys
+import msvcrt
+import os
+import random
 
 
-def cntt(text, centers='center'):
+
+def cntt(text, centers = 'center'):
     sentences = []
     s = re.sub(r'\s+', ' ', text)
     for s in re.split(r'(?<=[.!?…]) ', s):
@@ -18,7 +22,7 @@ def cntt(text, centers='center'):
             print('{:^80}'.format(s), end='')
 
 
-def cnt(text, centers='center'):
+def cnt(text, centers = 'right'):
     if centers == "left":
         print('{:<80}'.format(text), end='')
     elif centers == "right":
@@ -26,7 +30,8 @@ def cnt(text, centers='center'):
     elif centers == "center":
         print('{:^80}'.format(text), end='')
     sys.stdout.flush()
-    time.sleep(1)
+
+    time.sleep(1.5)
 
 
 def horiz():
