@@ -122,6 +122,12 @@ def quest(question, bag, plans, ans1='', ans2='', ans3='', ans4=''):
             result = -1
             print('Вводите ЧИСЛА от 1 до ' + str(maxa) + '!')
     return result
+
+
+def yon(winRange):  # yes or no
+    randint = random.randint(0, 100)
+    if 0 <= randint <= winRange:
+        return True
 def bagAndPlans(bag, plans):
     print('Вот, что храниться в вашем рюкзаке:')
     for t in bag:
