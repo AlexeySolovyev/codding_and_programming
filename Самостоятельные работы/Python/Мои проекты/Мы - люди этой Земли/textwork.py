@@ -5,6 +5,7 @@ import msvcrt
 import os
 import random
 
+clear = lambda: os.system('cls')
 
 
 def cntt(text, centers = 'center'):
@@ -24,9 +25,9 @@ def cntt(text, centers = 'center'):
 
 def cnt(text, centers = 'right'):
     if centers == "left":
-        print('{:<80}'.format(text), end='')
+        print(text.ljust(80))
     elif centers == "right":
-        print('{:>80}'.format(text), end='')
+        print(text.rjust(80))
     elif centers == "center":
         print('{:^80}'.format(text), end='')
     sys.stdout.flush()
@@ -39,7 +40,7 @@ def horiz():
 
 
 def cls():
-    print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
+    clear()
 
 
 def said(phraze):
