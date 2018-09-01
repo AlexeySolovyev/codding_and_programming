@@ -77,6 +77,12 @@ def said(phraze):
     print('\n')
 
 
+def wait(text = 'Нажмите любую клавишу...'):
+    print(text, end='', flush=True)
+    msvcrt.getch()
+    print('\b' * len(text) + ' ' * len(text), end='\n', flush=True)
+
+
 def quest(question, bag, plans, ans1='', ans2='', ans3='', ans4=''):
     result = -1
     print(question + ' (в ответ вводится цифра)')
