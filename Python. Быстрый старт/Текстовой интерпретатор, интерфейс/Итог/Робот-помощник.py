@@ -1,6 +1,5 @@
 import os           
 import shutil
-import psutil       
 import sys
 
 def dupl(filename):
@@ -26,7 +25,7 @@ def main():
     print("Командная строка =>")
     print("pip install psutil")
     print("Спасибо!")
-
+    import psutil
     print(" ")
 
     print("Добро пожаловать в мир Python, " + name + "!")
