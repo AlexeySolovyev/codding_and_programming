@@ -6,7 +6,7 @@ if a.isdigit() and b.isdigit():
     b = float(b)
 else:
     print("Error!")
-    sys.exit()
+    exit()
 
 answ = (a+b)*(a-b)
 print("(", a, "+", b, ")*(", a, "-", b, ")=", answ)

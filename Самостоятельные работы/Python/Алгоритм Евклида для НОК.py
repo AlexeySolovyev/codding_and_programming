@@ -1,5 +1,3 @@
-import sys
-
 print("Алгоритм Евклида для нахождения НОК")
 a, b = input("Введите 1-е число: "), input("Введите 2-е число: ")
 if a.isdigit() and b.isdigit():
@@ -7,7 +5,7 @@ if a.isdigit() and b.isdigit():
     b = float(b)
 else:
     print("Error!")
-    sys.exit()
+    exit()
 
 NOD_a, NOD_b = a, b
 

@@ -1,6 +1,6 @@
 import random
 
-lose, lucky, professional, veteran, novice, want_quit = 0, 0, 0, 0, 0, 0
+want_quit = ''
 
 print('Игра "Быки и коровы"')
 print("Правила игры: "
@@ -13,7 +13,7 @@ print("Правила игры: "
 
 while want_quit != "Y":
 
-    nums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    nums = range(10)
     random.shuffle(nums)
     answer = str(nums[0] + nums[1] + nums[2] + nums[3])
 
@@ -47,12 +47,6 @@ while want_quit != "Y":
     if number == "q":
         break
 
-    was_try = 10 - try_count
-    if was_try == 1: lucky += 1
-    elif was_try == 2 or was_try == 3: professional += 1
-    elif was_try == 4 or was_try == 5: veteran += 1
-    elif 10 > was_try > 5: novice += 1
-
     if try_count == 0:
         print("Попытки закончились! Вы проиграли!")
         lose += 1
@@ -60,13 +54,6 @@ while want_quit != "Y":
         print("Поздравляем! Вы выиграли!")
         print("Потрачено: " + str(was_try) + " попыток!")
 
-    print("Таблица резльтатов: \n    Вы везунчик " + str(lucky) + " раз \n    Вы профессионал " + str(
-        professional) + " раз \n    Вы бывалый " + str(veteran) + " раз \n    Вы новичок " + str(
-        novice) + " раз \n    Поражений: " + str(lose))
-
-    clear_result = input("Очистить таблицу результатов? (Y/N): ")
-    if clear_result == "Y": lose, lucky, professional, veteran, novice = 0, 0, 0, 0, 0
-
-    want_quit = input("Хотите выйти? (Y/N): ")
+    want_quit = input("Хотите выйти? (Y/N): ").upper()
 print("Спасибо за игру!")
 input()
