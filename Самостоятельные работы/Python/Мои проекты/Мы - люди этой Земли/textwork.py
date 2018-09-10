@@ -68,6 +68,7 @@ def said(phraze):
             situation = True
         elif s == ']':
             situation = False
+            time.sleep(1)
 
         if s == ' ':
             sys_space = True
@@ -130,14 +131,14 @@ def yon(winRange):  # yes or no
         return True
 
 
-def restart(head):
+def restart():
     horiz()
     cntt('ИГРА ОКОНЧЕНА!', 'center')
     horiz()
 
     repeat = input('Хотите продолжить игру с последней главы? ')
     if repeat in ['да', 'Да', 'Д', 'д', 'yes', 'Yes', 'Y', 'y']:
-        return head
+        return True
     else:
         return False
 
