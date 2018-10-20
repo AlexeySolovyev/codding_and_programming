@@ -4,6 +4,7 @@ import sys
 import msvcrt
 import os
 import random
+from bag_and_plans import *
 
 clear = lambda: os.system('cls')
 
@@ -21,6 +22,8 @@ def cntt(text, centers = 'center'):
             print('{:>80}'.format(s), end='')
         elif centers == "center":
             print('{:^80}'.format(s), end='')
+            
+    time.sleep(1.5)
 
 
 def cnt(text, centers = 'right'):
@@ -84,7 +87,7 @@ def wait(text = 'Нажмите любую клавишу...'):
     print('\b' * len(text) + ' ' * len(text), end='\n', flush=True)
 
 
-def quest(question, bag, plans, ans1='', ans2='', ans3='', ans4=''):
+def quest(question, ans1='', ans2='', ans3='', ans4=''):
     result = -1
     print(question + ' (в ответ вводится цифра)')
     print('[1] - ' + ans1)
@@ -103,7 +106,7 @@ def quest(question, bag, plans, ans1='', ans2='', ans3='', ans4=''):
     while result == -1:
         try:
             result = input('Ваш ответ: ')
-            if result not in ['B', 'b', 'P', 'p']:
+            if result.isdigit():
                 result = int(result)
             else:
                 if result in ['B', 'b']:
@@ -133,7 +136,7 @@ def yon(winRange):  # yes or no
 
 def restart():
     horiz()
-    cntt('ИГРА ОКОНЧЕНА!', 'center')
+    cntt('ИГРА ОКОНЧЕНА!')
     horiz()
 
     repeat = input('Хотите продолжить игру с последней главы? ')
@@ -142,7 +145,7 @@ def restart():
     else:
         return False
 
-def bagAndPlans(bag, plans):
+def bagAndPlans():
     print('Вот, что храниться в вашем рюкзаке:')
     for t in bag:
         print(t)
