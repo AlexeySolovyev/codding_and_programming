@@ -46,7 +46,7 @@ def cls():
     clear()
 
 
-def said(phraze):
+def said(phraze, fight = False):
     bore = False
     situation = False
     sys_space = False
@@ -54,7 +54,7 @@ def said(phraze):
     for s in phraze:
         print(s, end='')
         sys.stdout.flush()
-        if (bore and s == '.') or s == '!':
+        if (bore and s == '.') or s in ['!', '?']:
             time.sleep(0.25)
         elif situation:
             time.sleep(0)
@@ -67,9 +67,9 @@ def said(phraze):
         else:
             bore = False
 
-        if s == '[':
+        if s in ['[', '(']:
             situation = True
-        elif s == ']':
+        elif s in [']', ')'] and situation:
             situation = False
             time.sleep(1)
 
@@ -78,7 +78,21 @@ def said(phraze):
         else:
             sys_space = False
 
+    if not fight:
+        print('\n')
+
+def fight(text):
+    print()
+    sentences = []
+    s = re.sub(r'\s+', ' ', text)
+    for s in re.split(r'(?<=[.!?…]) ', s):
+        sentences.append(s)
+
+    for s in sentences:
+        said('{:^80}'.format(s), fight)
+    
     print('\n')
+    time.sleep(1.5)
 
 
 def wait(text = 'Нажмите любую клавишу...'):
@@ -139,7 +153,7 @@ def restart():
     cntt('ИГРА ОКОНЧЕНА!')
     horiz()
 
-    repeat = input('Хотите продолжить игру с последней главы? ')
+    repeat = input('Хотите начать игру сначала с последней главы? ')
     if repeat in ['да', 'Да', 'Д', 'д', 'yes', 'Yes', 'Y', 'y']:
         return True
     else:
@@ -155,3 +169,8 @@ def bagAndPlans():
         print(p)
     print('\n')
     time.sleep(5)
+
+def captions(text):
+    time.sleep(1.5)
+    print('{:^80}'.format(text), end='')
+    sys.stdout.flush()
